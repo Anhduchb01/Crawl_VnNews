@@ -4,8 +4,21 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
-
+class NewsItem(scrapy.Item):
+    title = scrapy.Field()
+    timeCreatePostOrigin = scrapy.Field()
+    summary = scrapy.Field()
+    content = scrapy.Field()
+    urlPageCrawl = scrapy.Field()
+    url = scrapy.Field()
+class DuocItem(scrapy.Item):
+    title = scrapy.Field()
+    author = scrapy.Field()
+    timeCreatePostOrigin = scrapy.Field()
+    summary = scrapy.Field()
+    content = scrapy.Field()
+    urlPageCrawl = scrapy.Field()
+    url = scrapy.Field()
 class VnNewsItem(scrapy.Item):
     title = scrapy.Field()
     timeCreatePostOrigin = scrapy.Field()
