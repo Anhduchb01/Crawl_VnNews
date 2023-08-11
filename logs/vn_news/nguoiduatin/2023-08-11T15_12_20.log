@@ -1,0 +1,1848 @@
+2023-08-11 15:12:25 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: vn_news)
+2023-08-11 15:12:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 21.2.0, Python 3.6.3 |Anaconda, Inc.| (default, Nov  8 2017, 15:10:56) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform Windows-10-10.0.19041-SP0
+2023-08-11 15:12:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'vn_news',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\vn_news\\nguoiduatin\\2023-08-11T15_12_20.log',
+ 'NEWSPIDER_MODULE': 'vn_news.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['vn_news.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-08-11 15:12:25 [asyncio] DEBUG: Using selector: SelectSelector
+2023-08-11 15:12:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-08-11 15:12:25 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-08-11 15:12:25 [scrapy.extensions.telnet] INFO: Telnet Password: b8402b503e264378
+2023-08-11 15:12:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-08-11 15:12:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-08-11 15:12:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-08-11 15:12:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['vn_news.pipelines.MongoPipeline']
+2023-08-11 15:12:25 [scrapy.core.engine] INFO: Spider opened
+2023-08-11 15:12:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:12:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2023-08-11 15:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/robots.txt> (referer: None)
+2023-08-11 15:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1> (referer: None)
+2023-08-11 15:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-imexpharm-bao-lai-quy-i2023-gap-ruoi-so-voi-cung-ky-a603966.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:12:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-imexpharm-bao-lai-quy-i2023-gap-ruoi-so-voi-cung-ky-a603966.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:12:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/sau-tai-cau-truc-bidiphar-ky-vong-dem-ve-1800-ty-dong-doanh-thu-2023-a604167.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:12:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/sau-tai-cau-truc-bidiphar-ky-vong-dem-ve-1800-ty-dong-doanh-thu-2023-a604167.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-hau-giang-bao-lai-ky-luc-a604250.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-hau-giang-bao-lai-ky-luc-a604250.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/gia-thanh-san-xuat-tang-duoc-pham-phong-phu-bao-lai-giam-28-a604688.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/gia-thanh-san-xuat-tang-duoc-pham-phong-phu-bao-lai-giam-28-a604688.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/doanh-thu-duoc-pham-opc-giam-mot-nua-so-voi-cung-ky-a604861.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/doanh-thu-duoc-pham-opc-giam-mot-nua-so-voi-cung-ky-a604861.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/traphaco-chi-31-ty-dong-cho-quang-cao-thu-lai-880-trieu-moi-ngay-a606974.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/traphaco-chi-31-ty-dong-cho-quang-cao-thu-lai-880-trieu-moi-ngay-a606974.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/loi-nhuan-doanh-nghiep-nganh-duoc-phan-hoa-trong-quy-dau-nam-a607738.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:21 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/loi-nhuan-doanh-nghiep-nganh-duoc-phan-hoa-trong-quy-dau-nam-a607738.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:25 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:13:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tong-giam-doc-bepharco-muon-mua-gan-400-000-co-phieu-a616877.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/tong-giam-doc-bepharco-muon-mua-gan-400-000-co-phieu-a616877.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-agimexpharm-bao-lai-quy-ii2023-di-ngang-a616992.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-agimexpharm-bao-lai-quy-ii2023-di-ngang-a616992.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/imexpharm-bao-lai-cao-ky-luc-ai-la-nguoi-huong-loi-nhat-a617967.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/imexpharm-bao-lai-cao-ky-luc-ai-la-nguoi-huong-loi-nhat-a617967.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tiem-luc-cong-ty-duoc-sap-dau-tu-nha-may-840-ty-dong-tai-binh-dinh-a618990.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/tiem-luc-cong-ty-duoc-sap-dau-tu-nha-may-840-ty-dong-tai-binh-dinh-a618990.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/loat-doanh-nghiep-nganh-duoc-an-nen-lam-ra-trong-quy-ii2023-a620805.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:13:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/loat-doanh-nghiep-nganh-duoc-an-nen-lam-ra-trong-quy-ii2023-a620805.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:13:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-imexpharm-lai-100-ty-dong-trong-6-thang-a560620.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-imexpharm-lai-100-ty-dong-trong-6-thang-a560620.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/masan-mo-cong-ty-ban-thuoc-von-dieu-le-hon-28-ty-dong-a561059.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/masan-mo-cong-ty-ban-thuoc-von-dieu-le-hon-28-ty-dong-a561059.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/danapha-bi-truy-thu-xu-phat-ve-thue-hon-3-6-ty-dong-a561073.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/danapha-bi-truy-thu-xu-phat-ve-thue-hon-3-6-ty-dong-a561073.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    content = self.formatString(content)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    text = text.replace('\r\n','')
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/thuong-hieu-duoc-pham-thuan-thuc-vat-100-made-in-vietnam-a577144.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/thuong-hieu-duoc-pham-thuan-thuc-vat-100-made-in-vietnam-a577144.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:14:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/bo-y-te-thu-hoi-6-lo-thuoc-tri-nhiem-khuan-a581248.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/bo-y-te-thu-hoi-6-lo-thuoc-tri-nhiem-khuan-a581248.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:25 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:14:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-cuu-long-phai-tra-bo-y-te-58-ty-dong-trong-vu-an-thuoc-oseltamiv-a582845.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-cuu-long-phai-tra-bo-y-te-58-ty-dong-trong-vu-an-thuoc-oseltamiv-a582845.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:14:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-trung-uong-2-bi-xu-phat-do-cham-cong-bo-thong-tin-a584499.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-trung-uong-2-bi-xu-phat-do-cham-cong-bo-thong-tin-a584499.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/co-phieu-sut-gia-manh-co-dong-lon-thoai-bot-von-tai-duoc-pham-ocp-a587443.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/co-phieu-sut-gia-manh-co-dong-lon-thoai-bot-von-tai-duoc-pham-ocp-a587443.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/bioderma-chinh-thuc-len-tieng-ve-viec-san-pham-bi-thu-hoi-a588032.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/bioderma-chinh-thuc-len-tieng-ve-viec-san-pham-bi-thu-hoi-a588032.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:14:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/e-mieng-banh-thi-phan-cua-doanh-nghiep-ban-le-duoc-pham-a590829.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:14:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/e-mieng-banh-thi-phan-cua-doanh-nghiep-ban-le-duoc-pham-a590829.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 38, in parse_article
+    def parse_article(self, response):
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:15:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/thu-hoi-toan-quoc-dung-dich-nho-mat-tobradico-cua-duoc-khoa-a593418.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:15:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/thu-hoi-toan-quoc-dung-dich-nho-mat-tobradico-cua-duoc-khoa-a593418.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:15:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/hanh-trinh-vi-chat-cua-duoc-pham-delap-toi-tre-em-vung-sau-vung-xa-a602760.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+2023-08-11 15:15:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/hanh-trinh-vi-chat-cua-duoc-pham-delap-toi-tre-em-vung-sau-vung-xa-a602760.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/gia-nhap-ho-louis-duoc-lam-dong-lai-ky-luc-co-phieu-lap-dinh-a541054.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:25 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:15:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/gia-nhap-ho-louis-duoc-lam-dong-lai-ky-luc-co-phieu-lap-dinh-a541054.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/an-do-phe-chuan-su-dung-khan-cap-vac-xin-corbevax-cho-tre-12-18-tuoi-a543873.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/an-do-phe-chuan-su-dung-khan-cap-vac-xin-corbevax-cho-tre-12-18-tuoi-a543873.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-cuu-long-len-tieng-ve-vu-cuu-thu-truong-bo-y-te-bi-khoi-to-a546299.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-cuu-long-len-tieng-ve-vu-cuu-thu-truong-bo-y-te-bi-khoi-to-a546299.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/louis-holdings-chinh-thuc-len-nam-quyen-chi-phoi-duoc-lam-dong-a547669.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/louis-holdings-chinh-thuc-len-nam-quyen-chi-phoi-duoc-lam-dong-a547669.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/ve-tay-nhom-louis-duoc-lam-dong-gia-tang-vay-no-ngan-hang-a547371.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/ve-tay-nhom-louis-duoc-lam-dong-gia-tang-vay-no-ngan-hang-a547371.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-hoang-huong-to-chuc-su-kien-voi-5-000-khach-moi-tham-gia-a547730.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:15:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-hoang-huong-to-chuc-su-kien-voi-5-000-khach-moi-tham-gia-a547730.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/vtv-noi-gi-truoc-ban-tin-vinh-danh-thuoc-hoang-huong-gay-tranh-cai-a549549.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/vtv-noi-gi-truoc-ban-tin-vinh-danh-thuoc-hoang-huong-gay-tranh-cai-a549549.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:16:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-hoang-huong-bi-phat-65-trieu-dong-a549680.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-pham-hoang-huong-bi-phat-65-trieu-dong-a549680.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:16:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/xu-phat-230-trieu-dong-va-tieu-huy-3-loai-thuoc-khong-dat-chat-luong-a551108.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/xu-phat-230-trieu-dong-va-tieu-huy-3-loai-thuoc-khong-dat-chat-luong-a551108.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:16:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/viet-nam-trong-so-nuoc-co-toc-do-phat-trien-y-te-nhanh-nhat-khu-vuc-a552849.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:21 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/viet-nam-trong-so-nuoc-co-toc-do-phat-trien-y-te-nhanh-nhat-khu-vuc-a552849.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:16:25 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:16:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tp-hcm-thu-giu-hon-5-000-san-pham-thuoc-tan-duoc-khong-ro-nguon-goc-a556318.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/tp-hcm-thu-giu-hon-5-000-san-pham-thuoc-tan-duoc-khong-ro-nguon-goc-a556318.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:16:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/pharbaco-bi-phat-va-truy-thu-hon-6-ty-dong-vi-vi-pham-ve-thue-a556901.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+2023-08-11 15:16:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/pharbaco-bi-phat-va-truy-thu-hon-6-ty-dong-vi-vi-pham-ve-thue-a556901.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/3)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:16:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:16:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/my-tang-toc-tiem-chung-nhac-lai-vac-xin-covid-19-a534574.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:16:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/my-tang-toc-tiem-chung-nhac-lai-vac-xin-covid-19-a534574.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:16:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/buoc-tien-moi-cua-sk-group-tai-thi-truong-ban-le-viet-nam-a535483.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:16:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/buoc-tien-moi-cua-sk-group-tai-thi-truong-ban-le-viet-nam-a535483.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:16:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-cuu-long-tang-ti-le-so-huu-tai-benovas-medevices-benovas-pharma-a536961.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:16:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-cuu-long-tang-ti-le-so-huu-tai-benovas-medevices-benovas-pharma-a536961.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/thu-hoi-giay-chung-nhan-kinh-doanh-duoc-cua-vimedimex-tai-hai-phong-a536988.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/thu-hoi-giay-chung-nhan-kinh-doanh-duoc-cua-vimedimex-tai-hai-phong-a536988.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-danapha-hoat-dong-ra-sao-truoc-khi-chao-san-upcom-a537050.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/duoc-danapha-hoat-dong-ra-sao-truoc-khi-chao-san-upcom-a537050.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/bidiphar-phat-hanh-11-5-trieu-co-phieu-de-chi-tra-co-tuc-nam-2021-a537655.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/bidiphar-phat-hanh-11-5-trieu-co-phieu-de-chi-tra-co-tuc-nam-2021-a537655.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/thu-hoi-chung-nhan-kinh-doanh-tai-hai-phong-vimedimex-co-anh-huong-a537874.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/thu-hoi-chung-nhan-kinh-doanh-tai-hai-phong-vimedimex-co-anh-huong-a537874.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/traphaco-du-chi-83-ty-dong-tam-ung-co-tuc-a538032.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/traphaco-du-chi-83-ty-dong-tam-ung-co-tuc-a538032.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:25 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:17:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/15-nha-dau-tu-ca-nhan-dang-ky-mua-toan-bo-14-trieu-co-phieu-dcl-a538734.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/15-nha-dau-tu-ca-nhan-dang-ky-mua-toan-bo-14-trieu-co-phieu-dcl-a538734.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/vimedimex-tam-dung-to-chuc-dai-hoi-co-dong-bat-thuong-a538794.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/vimedimex-tam-dung-to-chuc-dai-hoi-co-dong-bat-thuong-a538794.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/thi-gia-vmd-giam-manh-vo-pho-chu-tich-vimedimex-thoai-sach-von-a540641.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:42 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/thi-gia-vmd-giam-manh-vo-pho-chu-tich-vimedimex-thoai-sach-von-a540641.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/doanh-thu-duoc-hau-giang-giam-manh-trong-quy-iv2021-a540843.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+2023-08-11 15:17:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/doanh-thu-duoc-hau-giang-giam-manh-trong-quy-iv2021-a540843.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/4)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:17:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/6> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/cong-ty-duoc-noi-tieng-vi-cao-sao-vang-hot-bac-nho-sam-nhung-bo-than-a509253.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/cong-ty-duoc-noi-tieng-vi-cao-sao-vang-hot-bac-nho-sam-nhung-bo-than-a509253.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:18:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tiet-lo-bat-ngo-ve-cong-ty-duoc-pham-dong-y-ma-tran-thanh-lam-ceo-a510323.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/tiet-lo-bat-ngo-ve-cong-ty-duoc-pham-dong-y-ma-tran-thanh-lam-ceo-a510323.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:18:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/nha-thuoc-viet-phap-1-uy-tin-tu-chat-luong-den-nguon-goc-san-pham-a514961.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/nha-thuoc-viet-phap-1-uy-tin-tu-chat-luong-den-nguon-goc-san-pham-a514961.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:18:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/te-tuong-luu-gu-ly-bao-dien-tung-tu-choi-dong-quang-cao-70-ty-dong-a517976.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/te-tuong-luu-gu-ly-bao-dien-tung-tu-choi-dong-quang-cao-70-ty-dong-a517976.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:18:25 [scrapy.extensions.logstats] INFO: Crawled 59 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:18:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/kinh-doanh-duoc-pham-trai-phep-doanh-nghiep-bi-phat-154-trieu-dong-a527655.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/kinh-doanh-duoc-pham-trai-phep-doanh-nghiep-bi-phat-154-trieu-dong-a527655.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'
+2023-08-11 15:18:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/astrazeneca-dau-tu-2-nghin-ty-dong-giup-viet-nam-san-xuat-duoc-a532583.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/astrazeneca-dau-tu-2-nghin-ty-dong-giup-viet-nam-san-xuat-duoc-a532583.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:18:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/vimedimex-gan-toa-nha-vay-vpbank-de-nhap-khau-vac-xin-phong-covid-19-a532818.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/vimedimex-gan-toa-nha-vay-vpbank-de-nhap-khau-vac-xin-phong-covid-19-a532818.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 54, in parse_article
+    summary = self.formatString(summary)
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'list' object has no attribute 'replace'
+2023-08-11 15:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/bat-nguyen-tong-giam-doc-cong-ty-co-phan-duoc-pham-cuu-long-a533230.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+2023-08-11 15:18:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.nguoiduatin.vn/bat-nguyen-tong-giam-doc-cong-ty-co-phan-duoc-pham-cuu-long-a533230.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/5)
+Traceback (most recent call last):
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\defer.py", line 132, in iter_errback
+    yield next(it)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\utils\python.py", line 354, in __next__
+    return next(self.data)
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\ducba5.FSOFT.FPT.VN\.conda\envs\scrapyweb\lib\site-packages\scrapy\core\spidermw.py", line 66, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 48, in parse_article
+    print('Do Not convert to datetime')
+  File "F:\Crawl\Crawl_VnNews\vn_news\spiders\nguoiduatin.py", line 28, in formatString
+    if isinstance(text, list):  # Check if text is a list
+AttributeError: 'NoneType' object has no attribute 'replace'

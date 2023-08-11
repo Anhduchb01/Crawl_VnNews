@@ -1,0 +1,641 @@
+2023-08-11 15:17:20 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: vn_news)
+2023-08-11 15:17:20 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 21.2.0, Python 3.6.3 |Anaconda, Inc.| (default, Nov  8 2017, 15:10:56) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform Windows-10-10.0.19041-SP0
+2023-08-11 15:17:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'vn_news',
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\vn_news\\nguoiduatin\\2023-08-11T15_17_14.log',
+ 'NEWSPIDER_MODULE': 'vn_news.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['vn_news.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-08-11 15:17:20 [asyncio] DEBUG: Using selector: SelectSelector
+2023-08-11 15:17:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-08-11 15:17:20 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-08-11 15:17:20 [scrapy.extensions.telnet] INFO: Telnet Password: b1ffc165fc5ab5a9
+2023-08-11 15:17:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-08-11 15:17:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-08-11 15:17:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-08-11 15:17:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['vn_news.pipelines.MongoPipeline']
+2023-08-11 15:17:21 [scrapy.core.engine] INFO: Spider opened
+2023-08-11 15:17:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-08-11 15:17:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6025
+2023-08-11 15:17:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/robots.txt> (referer: None)
+2023-08-11 15:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1> (referer: None)
+2023-08-11 15:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/2> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:17:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-imexpharm-bao-lai-quy-i2023-gap-ruoi-so-voi-cung-ky-a603966.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:17:37 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:17:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/duoc-pham-imexpharm-bao-lai-quy-i2023-gap-ruoi-so-voi-cung-ky-a603966.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược phẩm Imexpharm HoSE IMP vừa công bố báo cáo '
+            'tài chính quý I 2023 với kết quả khởi sắc khi doanh thu thuần '
+            'tăng 53 so với cùng kỳ lên 479,3 tỷ đồng. Giá vốn hàng bán tăng '
+            '45 lên gần 248,4 tỷ đồng, lợi nhuận gộp theo đó tăng 62 lên 230,9 '
+            'tỷ đồng. Trong kỳ, doanh thu hoạt động tài chính của công ty tăng '
+            '25 lên 3,85 tỷ đồng. Chi phí tài chính gần như đi ngang so với '
+            'cùng kỳ, ghi nhận ở mức 6,2 tỷ đồng. Chi phí bán hàng và chi phí '
+            'quản lý doanh nghiệp ghi nhận 92,3 tỷ đồng và 37,9 tỷ đồng, lần '
+            'lượt tăng 70 và 90 . Cấn trừ đi các chi phí, Imexpharm ghi nhận '
+            'lợi nhuận sau thuế tăng 48 so với cùng kỳ lên 77,8 tỷ đồng. Phía '
+            'Imexpharm cho biết, kết quả tăng trưởng do trong quý I công ty '
+            'tiếp tục mở rộng thị trường, thị trường hồi phục sau đại dịch '
+            'Covid 19. Đồng thời, công ty cũng cơ cấu lại danh mục sản phẩm '
+            'bán ra, tập trung vào các sản phẩm chủ lực có giá trị và biên lợi '
+            'nhuận cao. Tính đến cuối quý I 2023, tổng tài sản của Imexpharm '
+            'đạt hơn 2.366 tỷ đồng, tăng nhẹ 4 so với đầu năm. Chiếm tỉ trọng '
+            'lớn nhất là chi phí xây dựng cơ bản dở dang ghi nhận ở mức 585,7 '
+            'tỷ đồng và hàng tồn kho ghi nhận gần 532,3 tỷ đồng. Khoản tiền và '
+            'các khoản tương đương tiền giảm mạnh từ 178,8 tỷ đồng hồi đầu năm '
+            'xuống còn 58,7 tỷ đồng. Về cơ cấu nguồn vốn, nợ ngắn hạn của '
+            'Imexpharm tăng 3 so với đầu năm lên 394 tỷ đồng. Trong đó, phải '
+            'trả người bán ngắn hạn tăng 22 lên 110,5 tỷ đồng và doanh thu '
+            'chưa thực hiện ngắn hạn ghi nhận hơn 19 tỷ đồng, trong khi đầu '
+            'năm không phát sinh khoản này. Đáng chú ý, trong kỳ công ty không '
+            'ghi nhận khoản nợ dài hạn. Vốn chủ sở hữu doanh nghiệp tăng nhẹ 4 '
+            'so với đầu kỳ lên 1.972 tỷ đồng. Biến động chủ yếu ở lợi nhuận '
+            'sau thuế chưa phân phối khi tăng 27 so với đầu năm lên 359,7 tỷ '
+            'đồng. Về kế hoạch kinh doanh năm 2023, theo tài liệu họp ĐHĐCĐ '
+            'công ty mới công bố, Imexpharm lên kế hoạch đem về 1.750 tỷ đồng '
+            'doanh thu thuần và 350 tỷ đồng lợi nhuận trước thuế, lần lượt '
+            'tăng 6,5 và 20 so với thực hiện năm 2022. Kế hoạch này được ban '
+            'lãnh đạo công ty đề ra khi nhận thấy ngành dược có vài điểm sáng '
+            'nhờ Nghị định 7, Nghị quyết 30, cũng với sự mở rộng mạng lưới các '
+            'chuỗi nhà thuốc hiện đại đã cho thấy sự phục hồi của mảng OTC '
+            'trong thời gian tới. Ngoài ra, việc khơi thông dòng sản phẩm '
+            'thuốc gốc và generics, những nút thắt dần được tháo gỡ cho thấy '
+            'tiềm năng ngành dược có sự tăng trưởng ổn định. Về mục tiêu dài '
+            'hạn, tới năm 2027 IMP kỳ vọng cán mốc 3.200 tỷ đồng doanh thu '
+            'thuần và 640 tỷ đồng lợi nhuận nhuận trước thuế. Doanh nghiệp sẽ '
+            'đạt được mục tiêu này khi mức tăng trưởng kép hàng năm đạt 16,3 . '
+            'Cùng với đó, công ty cũng lên kế hoạch đầu tư xây dựng nhà máy '
+            'mới tại Khu công nghiệp Quảng Khánh tại tỉnh Đồng Tháp với tổng '
+            'vốn đầu tư đến 2027 dự tính hơn 2.000 tỷ đồng. Vốn tài trợ dự '
+            'kiến từ nguồn vốn tự có và bổ sung bằng các nguồn phát hành cổ '
+            'phiếu ra công chúng cùng vốn vay',
+ 'summary': 'Trong quý I 2023, Imexpharm lãi gần 78 tỷ đồng nhờ cơ cấu lại '
+            'danh mục sản phẩm bán ra, tập trung vào các sản phẩm chủ lực có '
+            'giá trị và biên lợi nhuận cao.',
+ 'timeCreatePostOrigin': '2023/04/20',
+ 'title': 'Dược phẩm Imexpharm báo lãi quý I 2023 gấp rưỡi so với cùng kỳ',
+ 'url': 'https://www.nguoiduatin.vn/duoc-pham-imexpharm-bao-lai-quy-i2023-gap-ruoi-so-voi-cung-ky-a603966.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:17:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/sau-tai-cau-truc-bidiphar-ky-vong-dem-ve-1800-ty-dong-doanh-thu-2023-a604167.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:17:45 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:17:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/sau-tai-cau-truc-bidiphar-ky-vong-dem-ve-1800-ty-dong-doanh-thu-2023-a604167.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'CTCP Dược Trang thiết bị Y tế Bình Định Bidiphar, HoSE DBD vừa '
+            'công bố tài liệu họp Đại hội đồng cổ đông năm 2023. Theo đó, '
+            'doanh nghiệp đặt kế hoạch đem về 1.800 tỷ đồng doanh thu và 300 '
+            'tỷ đồng lợi nhuận trước thuế. So với kết quả đạt được năm 2022, '
+            'các chỉ tiêu này lần lượt tăng 13 và 19 . Để đạt được kế hoạch đề '
+            'ra, Ban lãnh đạo công ty sẽ phối hợp kinh doanh kết nối dữ liệu '
+            'dự báo bán hàng tồn khi thành khẩu, nguyên vật liệu và kế hoạch '
+            'sản xuất đang triển khai. Đồng thời hợp lý hoá, cải tiến các quy '
+            'trình sản xuất, hạ giá thành sản phẩm. Công ty tiếp tục đầu tư '
+            'mạnh cho hoạt động nghiên cứu và phát triển, đánh giá khả thi và '
+            'phát triển sản phẩm mới theo định hướng phục vụ cho 2 nhà máy mới '
+            'đạt tiêu chuẩn EU GMP với tổng mức đầu tư là 1.662 tỷ đồng. Bao '
+            'gồm Dự án đầu tư mới Nhà máy sản xuất thuốc vô trùng thể tích nhỏ '
+            'tại Bình Định dự kiến thực hiện trong giai đoạn 2023 2026 có mức '
+            'đầu tư 840 tỷ đồng Dự án đầu tư mới Nhà máy OSD NON Betalactam '
+            'tại Bình Định dự kiến thực hiện từ quý I 2024 2026 với mức đầu tư '
+            '822 tỷ đồng. Đáng chú ý, doanh nghiệp sẽ hoàn thành đánh giá, cấp '
+            'giấy chứng nhận GMP WHO dây chuyền thuốc viên ung thư và tái đánh '
+            'giá các dây chuyền khác. Về kết quả kinh doanh năm 2022, Bidiphar '
+            'ghi nhận doanh thu thuần đạt gần 1.555 tỷ đồng, gần như đi ngang '
+            'so với năm 2021 trong đó dược phẩm sản xuất ghi nhận tới 1.501 tỷ '
+            'đồng. Trong năm 2022, công ty ghi nhận lợi nhuận sau thuế đạt kỷ '
+            'lục với 243,5 tỷ đồng, tăng 23 so với năm trước. Năm 2022, giá '
+            'trị doanh thu theo kênh phân phối ETC đấu thầu của công ty đạt '
+            '890,7 tỷ đồng, tăng 43,13 so với năm ngoái. Trong đó, doanh thu '
+            'từ các dòng thuốc ung thư ở kênh đấu thầu đạt 290,7 tỷ đồng, tăng '
+            'hơn 63 so với năm ngoái doanh thu từ thuốc khác đạt 398,39 tỷ '
+            'đồng, tăng hơn 33 so với năm ngoái chiếm 44,73 tổng doanh thu từ '
+            'kênh ETC. Trong dài hạn, Ban lãnh đạo công ty cho biết nhóm dược '
+            'phẩm tự sản xuất sẽ là động lực tăng trưởng trong những năm tiếp '
+            'theo. Tới năm 2026, Bidiphar đặt mục tiêu đem về 3.000 tỷ đồng '
+            'doanh thu, trong đó doanh thu kênh OTC đạt trên 1.000 tỷ đồng '
+            'thông qua phát triển thêm các sản phẩm CHC. Bidiphar cũng đặt mục '
+            'tiêu phát triển hệ thống phân phối 25.000 nhà thuốc. Bidiphar là '
+            'doanh nghiệp sản xuất dược phẩm trực thuộc Nhà nước tại tỉnh Bình '
+            'Định đồng thời là công ty đầu tiên tại Việt Nam nghiên cứu và sản '
+            'xuất thành công thuốc kháng sinh dạng tiêm, phương pháp đông khô '
+            'thuốc, thuốc điều trị ung thư dạng tiêm. Cơ cấu sản phẩm của '
+            'Bidiphar gồm các nhóm chính là thuốc kháng sinh, thuốc điều trị '
+            'ung thư, dung dịch lọc máu, thuốc tiêu hóa thần kinh nội tiết tố, '
+            'vitamin thuốc hạ sốt, thực phẩm chức năng đông dược và các loại '
+            'thuốc khác. Trong đó, 3 nhóm sản phẩm chủ lực của doanh nghiệp là '
+            'thuốc điều trị ung thư, thuốc kháng sinh và dung dịch thẩm phân. '
+            'Ngoài ra, Bidiphar là đơn vị đầu tiên tại Việt Nam sản xuất thuốc '
+            'điều trị ung thư vào năm 2010. Doanh thu thuốc điều trị ung thư '
+            'chiếm 20,26 doanh thu hàng sản xuất của\xa0Bidiphar. Nhóm thuốc '
+            'kháng sinh của công ty chiếm tỉ trọng 28,27 doanh thu hàng sản '
+            'xuất, cung cấp cho hơn 100 cơ sở y tế tuyến trung ương',
+ 'summary': 'Dự hái quả ngọt từ tái cấu trúc vào năm 2023, Bidiphar lên kế '
+            'hoạch đem về 1.800 tỷ đồng doanh thu trong năm 2023, tăng trưởng '
+            '13 so với thực hiện năm trước.',
+ 'timeCreatePostOrigin': '2023/04/21',
+ 'title': 'Sau tái cấu trúc, Bidiphar kỳ vọng đem về 1.800 tỷ đồng doanh thu '
+          '2023',
+ 'url': 'https://www.nguoiduatin.vn/sau-tai-cau-truc-bidiphar-ky-vong-dem-ve-1800-ty-dong-doanh-thu-2023-a604167.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:17:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-hau-giang-bao-lai-ky-luc-a604250.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:17:49 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:17:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/duoc-hau-giang-bao-lai-ky-luc-a604250.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược Hậu Giang HoSE DHG vừa công bố báo cáo tài '
+            'chính quý I 2023 với doanh thu thuần đạt gần 1.229 tỷ đồng, tăng '
+            '15 so với cùng kỳ. Giá vốn hàng bán tăng 10 lên 614 tỷ đồng. Nhờ '
+            'giá vốn tăng chậm hơn mức tăng doanh thu, nên biên lãi gộp của '
+            'doanh nghiệp cải thiện từ 47 lên 50 . Doanh thu tài chính tăng 76 '
+            'lên 53 tỷ đồng trong khi chi phí tài chính giảm 14 xuống còn 19 '
+            'tỷ đồng. Kết quả, doanh nghiệp báo lãi trước thuế đạt 391 tỷ đồng '
+            'và lãi sau thuế đạt 361 tỷ đồng, lần lượt tăng 37 và 41 so với '
+            'cùng kỳ. Đây là mức lãi quý kỷ lục của Dược Hậu Giang từ năm '
+            '2006. Giải trình về biến động này, phía công ty cho biết doanh '
+            'thu và lợi nhuận trong kỳ tăng nhờ tập trung bán các sản phẩm chủ '
+            'lực, đặc biệt là kháng sinh, giảm đau hạ sốt như Hapacol, '
+            'Klamentin, Hagina. Đồng thời, công ty cũng chủ động tăng dự trữ '
+            'nguyên liệu, thành phẩm để đáp ứng nhu cầu thị trường cũng như '
+            'chủ động hệ thống phân phối để kết nối với khách hàng. Trước đó, '
+            'ban lãnh đạo công ty lên kế hoạch đem về 5.000 tỷ đồng doanh thu '
+            'thuần và lợi nhuận trước thuế là 1.130 tỷ đồng, lần lượt tăng 7 '
+            'và 3 so với thực hiện năm 2022. Như vậy, hết quý I 2023, doanh '
+            'nghiệp đã hoàn thành 24 kế hoạch doanh thu và 35 chỉ tiêu lợi '
+            'nhuận trước thuế. Tính đến ngày 31 3, tổng tài sản của Dược Hậu '
+            'Giang tăng 6,4 so với đầu năm lên 5.503 tỷ đồng. Khoản tiền và '
+            'tương đương tiền ghi nhận ở mức 2.538 tỷ đồng, chiếm 46 tổng tài '
+            'sản. Trong đó, tiền mặt công ty nắm giữ là 48 tỷ đồng và gần '
+            '2.500 tỷ đồng tiền gửi ngắn hạn. Về cơ cấu nguồn vốn, nợ phải trả '
+            'đến hết quý I của công ty ghi nhận ở mức 850,5 tỷ đồng, giảm hơn '
+            '26 tỷ đồng so với hồi đầu năm. Khoản phải trả người bán ngắn hạn '
+            'giảm 25 xuống còn 275,7 tỷ đồng và khoản vay ngắn hạn tăng 2,4 '
+            'lần lên 273,2 tỷ đồng. Vốn chủ sở hữu tăng nhẹ 8 so với hồi đầu '
+            'năm lên 4.652 tỷ đồng, trong đó có 1.207 tỷ đồng vố góp và 1.379 '
+            'tỷ đồng lợi nhuận sau thuế chưa phân phối. Trong năm 2022, Dược '
+            'Hậu Giang ghi nhận 4.676 tỷ đồng doanh thu thuần và 988 tỷ đồng '
+            'lợi nhuận sau thuế, lần lượt tăng 17 và 27 so với năm 2021. Đây '
+            'cũng là mức lãi năm kỷ lục của doanh nghiệp và là năm thứ 4 ghi '
+            'nhận lãi tăng trưởng. Tại cuộc họp Đại hội đồng Cổng đông thường '
+            'niên năm 2023 vừa diễn ra, Ban lãnh đạo và các cổ đông đã thống '
+            'nhất thông qua kế hoạch chi trả cổ tức năm 2022 bằng tiền mặt với '
+            'tỉ lệ 35 . Hiện mã DHG có khoảng hơn 130 triệu cổ phiếu đang lưu '
+            'hành, như vậy dự kiến công ty sẽ chi hơn 455 tỷ đồng để trả cổ '
+            'tức',
+ 'summary': 'Nhờ tập trung bán các sản phẩm chủ lực, đặc biệt là kháng sinh, '
+            'giảm đau hạ sốt nên quý I 2023 Dược Hậu Giang báo lãi sau thuế kỷ '
+            'lục ở mức 361 tỷ đồng.',
+ 'timeCreatePostOrigin': '2023/04/21',
+ 'title': 'Dược Hậu Giang báo lãi kỷ lục',
+ 'url': 'https://www.nguoiduatin.vn/duoc-hau-giang-bao-lai-ky-luc-a604250.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:17:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/gia-thanh-san-xuat-tang-duoc-pham-phong-phu-bao-lai-giam-28-a604688.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:17:56 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:17:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/gia-thanh-san-xuat-tang-duoc-pham-phong-phu-bao-lai-giam-28-a604688.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'CTCP Dược phẩm Phong Phú HNX PPP vừa công bố báo cáo tài chính '
+            'quý I 2023 với kết doanh thu thuần đạt gần 37 tỷ đồng, gần như đi '
+            'ngang so với cùng kỳ năm ngoái. Tuy nhiên, giá vốn hàng bán tăng '
+            '7 lên 25,3 tỷ đồng khiến lãi gộp theo đó giảm 14 xuống còn 11,6 '
+            'tỷ đồng. Chi phí quản lý doanh nghiệp tăng 9 lên 2,7 tỷ đồng và '
+            'chi phí bán hàng ghi nhận ở mức 3,1 tỷ đồng, tăng 7 do công ty '
+            'bước đầu đầu tư mở rộng các kênh bán hàng, tăng cường quảng bá '
+            'nhận diện thương hiệu. Kết quả, PPP ghi nhận lợi nhuận sau thuế '
+            'giảm 28 xuống còn 4,7 tỷ đồng. Giải trình về nguyên nhân lợi '
+            'nhuận giảm, phía doanh nghiệp cho biết do sản lượng sản xuất của '
+            'công ty giảm gần 26 so với cùng kỳ trong khi định phí sản xuất '
+            'giảm không tương ứng làm tăng giá thành sản xuất so với cùng kỳ '
+            'năm trước. Trước đó, theo tài liệu ĐHĐCĐ thường niên năm 2023, '
+            'Ban lãnh đạo công ty đặt mục tiêu đem về 157,5 tỷ đồng doanh thu '
+            'và 13,5 tỷ đồng lợi nhuận sau thuế. Với kết quả đạt được trong '
+            'quý I, PPP đã thực hiện 23 kế hoạch năm và 36 chỉ tiêu lợi nhuận '
+            'sau thuế. Đến ngày 31 3, tổng tài sản của PPP gần như đi ngang so '
+            'với thời điểm đầu năm, ghi nhận ở mức 158 tỷ đồng. Tiền và các '
+            'khoản tương đương tiền tăng 23 so với đầu năm lên 13,3 tỷ đồng. '
+            'Về cơ cấu nguồn vốn, đến cuối quý I công ty có 29,5 tỷ đồng nợ '
+            'phải trả, giảm 13 so với đầu năm. Phần giảm chủ yếu đến từ khoản '
+            'phải trả người lao động giảm một nửa xuống còn hơn 2 tỷ đồng thuế '
+            'và các khoản nộp Nhà nước giảm 15 xuống còn 1,9 tỷ đồng. Trong kỳ '
+            'PPP không ghi nhận khoản vay nợ nào. Vốn chủ sở hữu của doanh '
+            'nghiệp tăng nhẹ lên 128,8 tỷ đồng, trong đó vốn góp giữ nguyên từ '
+            'đầu năm với gần 88 tỷ đồng và lợi nhuận sau thuế chưa phân phối '
+            'luỹ kế đến cuối kỳ trước tăng 3,2 lần lên gần 26 tỷ đồng. Theo dự '
+            'báo của SSI Research, trong năm 2023, tăng trưởng của ngành dược '
+            'sẽ hạn chế, lợi nhuận có thể ghi nhận mức thấp hơn trước khi khá '
+            'dần lên.\xa0Bối cảnh sau đại dịch sẽ ổn định ở hầu hết các khía '
+            'cạnh, nhưng suy thoái kinh tế có thể làm đình trệ chi tiêu cho '
+            'chăm sóc sức khỏe. Theo các chuyên gia của SSI Research nhận '
+            'định, nửa đầu năm 2023 sẽ là khoảng thời gian khó lường đối với '
+            'nguồn cung hoạt chất API và tá dược',
+ 'summary': 'Quý I 2023, lượng sản xuất giảm 26 trong khi giá thành sản xuất '
+            'tăng khiến lợi nhuận của Dược phẩm Phong Phú giảm 28 xuống còn '
+            '4,7 tỷ đồng.',
+ 'timeCreatePostOrigin': '2023/04/24',
+ 'title': 'Giá thành sản xuất tăng, Dược phẩm Phong Phú báo lãi giảm 28 ',
+ 'url': 'https://www.nguoiduatin.vn/gia-thanh-san-xuat-tang-duoc-pham-phong-phu-bao-lai-giam-28-a604688.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/doanh-thu-duoc-pham-opc-giam-mot-nua-so-voi-cung-ky-a604861.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:03 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/doanh-thu-duoc-pham-opc-giam-mot-nua-so-voi-cung-ky-a604861.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược phẩm OPC HoSE OPC vừa công bố báo cáo tài '
+            'chính với doanh thu thuần đạt 198,1 tỷ đồng, giảm 52 so với cùng '
+            'kỳ. Giá vốn hàng bán giảm 53 xuống còn 110,5 tỷ đồng, lãi gộp '
+            'giảm 60 còn gần 87,6 tỷ đồng. Trong kỳ, doanh thu tài chính\xa0'
+            'ghi nhận tăng gấp 4,7 lần lên 6,1 tỷ đồng, phần tăng đến từ việc '
+            'OPC được chia cổ tức gần 4,5 tỷ đồng. Chi phí bán hàng ghi nhận '
+            'gần 34,8 tỷ đồng và chi phí quản lý ghi nhận gần 20,7 tỷ đồng, '
+            'lần lượt giảm 50 và 11 . Cấn trừ đi các chi phí, Dược phẩm OPC '
+            'báo lãi trước thuế giảm 30 xuống còn gần 36,8 tỷ đồng. Phía doanh '
+            'nghiệp cho biết, do khó khăn chung của thị trường nên doanh thu '
+            'giảm so với cùng kỳ, bên cạnh đó mức giảm của lợi nhuận ít hơn '
+            'mức giảm của doanh thu chủ yếu do tỉ trọng giá vốn trên doanh thu '
+            'thuần và chi phí bán hàng giảm so với cùng kỳ. Trước đó, Ban lãnh '
+            'đạo công ty đã đặt mục tiêu đem về 1.286 tỷ đồng doanh thu và 187 '
+            'tỷ đồng lợi nhuận trước thuế, lần lượt tăng 8 và 4 so với kết quả '
+            'đạt được năm 2022. Với kết quả đạt được trong quý I, OPC mới hoàn '
+            'thành 15 kế hoạch doanh thu và 20 chỉ tiêu lợi nhuận cả năm. Đến '
+            'ngày 31 3, tổng tài sản của Dược phẩm OPC ghi nhận đạt hơn 1.220 '
+            'tỷ đồng, giảm nhẹ 2 so với thời điểm đầu năm. Khoản đầu tư tài '
+            'chính ngắn hạn của OPC giảm 5 so với thời điểm đầu năm, trong đó '
+            'chứng khoán kinh doanh giảm 12 còn gần 139,3 tỷ đồng. Hàng tồn '
+            'kho chiếm tỉ trọng lớn nhất trong cơ cấu tài sản với hơn 407,4 tỷ '
+            'đồng, giảm nhẹ so với đầu năm. Trong đó khoản nguyên, vật liệu '
+            'ghi nhận 142 tỷ đồng và khoản thành phẩm ghi nhận 104 tỷ đồng. '
+            'Bên cạnh đó, OPC cũng có 160 tỷ đồng giá trị thuê đất đang trong '
+            'quá trình chuyển nhượng cho CTCP Phát triển Hạ tầng Khu công '
+            'nghiệp Tây Nịnh tại quận 1, Tp.Hồ Chí Minh. Về cơ cấu nguồn vốn, '
+            'đến hết quý I nợ phải trả của doanh nghiệp tăng 5 lên 391,3 tỷ '
+            'đồng, chủ yếu là nợ ngắn hạn với gần 386 tỷ đồng. Vốn chủ sở hữu '
+            'của Dược phẩm OPC giảm 5 so với hồi đầu năm xuống còn 829 tỷ '
+            'đồng, phần giảm đến từ lợi nhuận sau thuế chưa phân phối ghi nhận '
+            '98,8 tỷ đồng, giảm 30 so với đầu năm',
+ 'summary': 'Do khó khăn chung của thị trường, Dược phẩm OPC báo doanh thu và '
+            'lợi nhuận sụt giảm so với cùng kỳ.',
+ 'timeCreatePostOrigin': '2023/04/25',
+ 'title': 'Doanh thu Dược phẩm OPC giảm 52 trong quý I',
+ 'url': 'https://www.nguoiduatin.vn/doanh-thu-duoc-pham-opc-giam-mot-nua-so-voi-cung-ky-a604861.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/traphaco-chi-31-ty-dong-cho-quang-cao-thu-lai-880-trieu-moi-ngay-a606974.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:10 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/traphaco-chi-31-ty-dong-cho-quang-cao-thu-lai-880-trieu-moi-ngay-a606974.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Traphaco HoSE TRA vừa công bố báo cáo tài chính '
+            'hợp nhất quý I 2023 với doanh thu thuần đạt hơn 619,1 tỷ đồng, '
+            'giảm nhẹ so với cùng kỳ. Do giá vốn hàng bán giảm gần 8 xuống '
+            '274,4 tỷ đồng nên lãi gộp ghi nhận tăng 6 lên gần 344,7 tỷ đồng. '
+            'Doanh thu hoạt động tài chính hơn 2,4 tỷ đồng, giảm 32 so với '
+            'cùng kỳ trong khi chi phí tăng 16 lên hơn 640 triệu đồng. Các chi '
+            'phí bán hàng và chi phí quản lý doanh nghiệp tăng 18 và 5 , lần '
+            'lượt ghi nhận ở mức gần 170,8 tỷ đồng và hơn 80 tỷ đồng. Trong '
+            'đó, Traphaco chi 30,6 tỷ đồng cho quảng cáo, tăng 15 so với cùng '
+            'kỳ. Kết quả, Traphaco báo lãi sau thuế hơn 79,4 tỷ đồng, giảm 11 '
+            'so với cùng kỳ. Như vậy, bình quân mỗi ngày doanh nghiệp dược '
+            'phẩm này thu về hơn 882 triệu đồng tiền lãi. Trong năm 2023, '
+            'Traphaco đặt mục tiêu đem về 2.133 tỷ đồng doanh thu kênh bán lẻ '
+            'ở tiệm thuốc và 206 tỷ đồng kênh đấu thầu tại bệnh viện. Ngoài '
+            'ra, công ty dự kiến sẽ thu về khoảng 36 tỷ đồng doanh số từ việc '
+            'đưa vào sản xuất và cho ra thị trường ít nhất 19 sản phẩm mới. '
+            'Đến ngày 31 3 2023, tổng tài sản của Traphaco ở mức gần 1.837 tỷ '
+            'đồng, tăng nhẹ so với đầu năm. Tiền và các khoản tương đương tiền '
+            'giảm 19 xuống còn gần 160 tỷ đồng.\xa0Tài sản cố định ở mức hơn '
+            '509 tỷ đồng, trong đó có 18 quyền sử dụng đất lâu với có tổng '
+            'diện tích gần 3,2 ha có trị giá gần 51,2 tỷ đồng. Về cơ cấu nguồn '
+            'vốn, tổng nợ phải trả của doanh nghiệp hơn 429,6 tỷ đồng, giảm '
+            'nhẹ so với đầu năm, chiếm chủ yếu là khoản phải trả cho người bán '
+            'ngắn hạn, phải trả người lao động, chi phí phải trả ngắn hạn. '
+            'Đáng chú ý, thời điểm cuối quý I 2023, Traphaco không còn ghi '
+            'nhận khoản vay nợ thuê tài chính nào, trong khi cùng kỳ ghi nhận '
+            '40 tỷ đồng',
+ 'summary': 'Quý I 2023, Dược phẩm Traphaco báo lãi sau thuế đạt 79,4 tỷ đồng. '
+            'Như vậy, bình quân mỗi ngày doanh nghiệp thu lãi 882 triệu đồng.',
+ 'timeCreatePostOrigin': '2023/05/09',
+ 'title': 'Dược phẩm Traphaco chi 31 tỷ đồng cho quảng cáo, thu lãi 880 triệu '
+          'mỗi ngày',
+ 'url': 'https://www.nguoiduatin.vn/traphaco-chi-31-ty-dong-cho-quang-cao-thu-lai-880-trieu-moi-ngay-a606974.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/loi-nhuan-doanh-nghiep-nganh-duoc-phan-hoa-trong-quy-dau-nam-a607738.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:17 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/loi-nhuan-doanh-nghiep-nganh-duoc-phan-hoa-trong-quy-dau-nam-a607738.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Luật khám bênh, chữa bệnh 15 2023 QH15 Thông tư 06 2023',
+ 'summary': 'Quý I 2023, nhiều doanh nghiệp ngành dược trở lại đường đua tăng '
+            'trưởng sau khi Bộ Y tế ban hành chính sách mới, riêng Ladophar '
+            'ngược chiều báo lỗ.',
+ 'timeCreatePostOrigin': '2023/05/15',
+ 'title': 'Lợi nhuận doanh nghiệp ngành dược phân hoá trong quý đầu năm',
+ 'url': 'https://www.nguoiduatin.vn/loi-nhuan-doanh-nghiep-nganh-duoc-phan-hoa-trong-quy-dau-nam-a607738.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:21 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 10 pages/min), scraped 7 items (at 7 items/min)
+2023-08-11 15:18:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tong-giam-doc-bepharco-muon-mua-gan-400-000-co-phieu-a616877.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:22 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/tong-giam-doc-bepharco-muon-mua-gan-400-000-co-phieu-a616877.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược Bến Tre Bepharco, HoSE DBT vừa thông báo '
+            'giao dịch cổ phiếu của Tổng Giám đốc Phạm Thứ Triệu. Theo đó, ông '
+            'triệu đăng ký mua 396.000 cổ phiếu DBT theo phương thức khớp lệnh '
+            'nhằm tăng tỉ lệ sở hữu tại doanh nghiệp. Nếu giao dịch thành '
+            'công, ông Triệu sẽ nâng tỉ lệ sở hữu tại Bepharco từ 12,61 lên '
+            '15,1 vốn, tương đương tăng từ 1,97 triệu cổ phiếu lên 2,36 triệu '
+            'cổ phiếu. Trên thị trường chứng khoán, chốt phiên ngày 12 7, mã '
+            'DBT giảm nhẹ xuống mức 13.850 đồng cổ phiếu. Với thị giá này, ước '
+            'tính ông Triệu cần chi khoảng hơn 5,48 tỷ đồng cho giao dịch này. '
+            'Liên quan đến giao dịch cổ phiếu của ông Phạm Thứ Triệu, trước đó '
+            'ông đã đăng ký bán 756.900 cổ phần của CTCP Dược phẩm Trung ương '
+            'Codupha UPCoM CDP , hiện Bepharco là cổ đông lớn của CDP. Ông '
+            'Phạm Thứ Triệu hiện là Thành viên HĐQT của CDP, hiện đang nắm giữ '
+            '4,26 triệu cổ phần, tương đương sở hữu 23,14 vốn điều lệ của CDP. '
+            'Nếu giao dịch thành công, tỉ lệ sở hữu của Bepharco tại CDP giảm '
+            'xuống còn 19,06 vốn điều lệ, như vậy CDP sẽ không còn là công ty '
+            'liên kết của Bepharco. Trước đó vào tháng 2 2023, Bepharco cũng '
+            'đã đăng ký bán toàn bộ 4,26 triệu cổ phần CDP, thời gian thực '
+            'hiện từ 8 2 đến 9 3 với mục đích cơ cấu lại tài sản, nhưng kết '
+            'quả đến khi kết thúc thời gian đăng ký vẫn không có cổ phiếu nào '
+            'được bán, lý do giải trình là giá thị trường không đạt kỳ vọng. '
+            'Về tình hình kinh doanh của\xa0Bepharco, quý I 2023, công ty đạt '
+            'doanh thu 174 tỷ đồng, tăng gần 20 so với cùng kỳ năm trước và '
+            'lãi sau thuế 10 tỷ đồng, gấp 2,8 lần. Năm 2023, Ban lãnh đạo '
+            'doanh nghiệp đặt mục tiêu đem về 1.105 tỷ đồng doanh thu và 42,4 '
+            'tỷ đồng lãi sau thuế. So với kế hoạch đề ra, doanh nghiệp đã thực '
+            'hiện được 16 mục tiêu doanh thu và 24 chỉ tiêu lãi sau thuế',
+ 'summary': 'Nhằm tăng tỉ lệ sở hữu tại Bepharco, Tổng Giám đốc Phạm Thứ Triệu '
+            'đã đăng ký mua 396.000 cổ phiếu DBT theo phương thức khớp lệnh.',
+ 'timeCreatePostOrigin': '2023/07/12',
+ 'title': 'Tổng Giám đốc Bepharco muốn mua gần 400.000 cổ phiếu',
+ 'url': 'https://www.nguoiduatin.vn/tong-giam-doc-bepharco-muon-mua-gan-400-000-co-phieu-a616877.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/duoc-pham-agimexpharm-bao-lai-quy-ii2023-di-ngang-a616992.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:28 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/duoc-pham-agimexpharm-bao-lai-quy-ii2023-di-ngang-a616992.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược phẩm Agimexpharm UPCoM AGP vừa công bố báo '
+            'cáo tài chính riêng quý II 2023 với doanh thu thuần đạt hơn 175,4 '
+            'tỷ đồng, tăng 19 so với cùng kỳ năm trước. Tuy nhiên, do giá vốn '
+            'hàng bán tăng 23 lên 121,5 tỷ đồng khiến lãi gộp của công ty đi '
+            'ngang so với cùng kỳ. Doanh thu hoạt động tài chính giảm tới 95 '
+            'xuống còn hơn 37 triệu đồng, tuy nhiên không ảnh hưởng đến kết '
+            'quả kinh doanh quá nhiều, song chi phí tài chính tăng 35 lên 10,6 '
+            'tỷ đồng.\xa0Kết quả, Agimexpharm báo lợi nhuận sau thuế giảm 5 '
+            'xuống 20 tỷ đồng. Lũy kế 6 tháng đầu năm, doanh thu thuần của '
+            'công ty đạt 345,5 tỷ đồng, tăng 12 so với cùng kỳ năm ngoái lợi '
+            'nhuận trước thuế đi ngang ở mức 28,5 tỷ đồng và lợi nhuận sau '
+            'thuế đạt 22,9 tỷ đồng, tăng 10 . So với kế hoạch đề ra năm 2023 '
+            'mang về 750 tỷ đồng doanh thu và 60 tỷ đồng lợi nhuận trước thuế, '
+            'Agimexpharm đã hoàn thành 46 kế hoạch doanh thu và 47 chỉ tiêu '
+            'lợi nhuận sau nửa năm. Tính đến ngày 30 6, tổng tài sản của '
+            'Agimexpharm tăng 5 lên 846,6 tỷ đồng. Tiền và các khoản tương '
+            'đương tiền tăng gấp đôi lên hơn 17,6 tỷ đồng, chủ yếu đến từ tiền '
+            'gửi ngân hàng không kỳ hạn tăng 58 lên hơn 14 tỷ đồng. Hàng tồn '
+            'kho tăng nhẹ 3 lên 280,7 tỷ đồng chủ yếu là nguyên, vật liệu ghi '
+            'nhận 157,7 tỷ đồng và 98,8 tỷ đồng thành phẩm. Chi phí xây dựng '
+            'dở dang giảm từ 32 tỷ đồng hồi đầu năm xuống còn 10,3 tỷ đồng ở '
+            'kỳ này phần giảm chủ yếu do không phát sinh chi phí tại Công '
+            'trình xây dựng nhà kho Non Betalactam, trong khi đầu kỳ ghi nhận '
+            'hơn 25,5 tỷ đồng. Trong kỳ, khoản phải trả ngắn hạn khác tăng '
+            'mạnh từ gần 2 tỷ đồng hồi đầu năm lên hơn 37 tỷ đồng do trong kỳ '
+            'công ty thực hiện trả cổ tức, lợi nhuận gần 28 tỷ đồng, các khoản '
+            'phải trả ngắn hạn khác cũng ghi nhận tăng từ 571 triệu hồi đầu '
+            'năm lên 8,7 tỷ đồng ở kỳ này. Về cơ cấu nguồn vốn, nợ phải trả '
+            'của Agimexpharm tăng 10 lên hơn 538,5 tỷ đồng. Trong đó, vay nợ '
+            'thê tài chính đi ngang ở mức 365,4 tỷ đồng, chủ yếu là vay nợ '
+            'thuê tài chính ngắn hạn hơn 345,4 tỷ đồng. Hiện công ty đang vay '
+            'VietinBank 170,7 tỷ đồng, PB Bank 72,8 tỷ đồng, Techcombank gần '
+            '45 tỷ đồng, Vietcombank 38 tỷ đồng. Thời điểm 30 6, vốn chủ sở '
+            'hữu của Agimexpharm giảm nhẹ 2 xuống 307 tỷ đồng trong đó vốn góp '
+            'ghi nhận ở mức 179,7 tỷ đồng, lợi nhuận sau thuế chưa phân phối '
+            'giảm gần một nửa so với đầu năm xuống còn 22,9 tỷ đồng',
+ 'summary': 'Quý II 2023, Agimexpharm báo doanh thu tăng 19 lên hơn 175 tỷ '
+            'đồng, tuy nhiên do chi phí tăng cao khiến lãi sau thuế của doanh '
+            'nghiệp giảm 5 xuống 20 tỷ đồng.',
+ 'timeCreatePostOrigin': '2023/07/13',
+ 'title': 'Dược phẩm Agimexpharm báo lãi quý II 2023 đi ngang',
+ 'url': 'https://www.nguoiduatin.vn/duoc-pham-agimexpharm-bao-lai-quy-ii2023-di-ngang-a616992.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/imexpharm-bao-lai-cao-ky-luc-ai-la-nguoi-huong-loi-nhat-a617967.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:35 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/imexpharm-bao-lai-cao-ky-luc-ai-la-nguoi-huong-loi-nhat-a617967.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Công ty Cổ phần Dược phẩm Imexpharm HoSE IMP vừa công bố báo cáo '
+            'tài chính quý I 2023 với doanh thu thuần tăng 24 so với cùng kỳ, '
+            'đạt 439,7 tỷ đồng tuy nhiên, so với quý I 2023, con số này đã '
+            'giảm 10 . Do đà tăng của giá vốn hàng bán chậm hơn đà tăng của '
+            'doanh thu nên biên lãi gộp cải thiện từ 39,8 lên 43,9 ở kỳ này '
+            'lãi gộp theo đó tăng 37 lên 193,1 tỷ đồng. Cấn trừ đi các chi '
+            'phí, Imexpharm ghi nhận lợi nhuận sau thuế tăng 71 so với cùng kỳ '
+            'lên 79,6 tỷ đồng, đây cũng là mức lãi quý kỷ lục của doanh nghiệp '
+            'dược phẩm này. Phía Imexpharm cho biết, kết quả tăng trưởng do '
+            'trong quý công ty tiếp tục mở rộng thị trường, đồng thời cơ cấu '
+            'lại danh mục sản phẩm bán ra, tập trung vào các sản phẩm chủ lực '
+            'có giá trị và biên lợi nhuận cao. Giải trình về kết quả tăng '
+            'trưởng này giống hệt với quý I 2023 trước đó. Lũy kế 6 tháng đầu '
+            'năm, Imexpharm ghi nhận doanh thu thuần tăng mạnh 37 lên 918,9 tỷ '
+            'đồng, lãi gộp cũng tăng 49 lên 424 tỷ đồng. Nhờ thu nhượng bán, '
+            'thanh lý tài sản tăng từ 10 tỷ đồng hồi đầu năm lên 1.292 tỷ đồng '
+            'nên khoản thu nhập khác của công ty tăng gấp 3 lần lên 1.743 tỷ '
+            'đồng. Kết quả, Imexpharm báo lãi trước thuế và lãi sau thuế lần '
+            'lượt 199,1 tỷ đồng và 157,5 tỷ đồng, tăng 58 so với cùng kỳ. So '
+            'với mục tiêu lãi trước thuế 350 tỷ đồng trong năm 2023, Imexpharm '
+            'đã thực hiện được 57 kế hoạch sau 6 tháng đầu năm. Sau khi công '
+            'bố báo cáo tài chính quý II 2023 với đà tăng trưởng ấn tượng, cổ '
+            'phiếu IMP đã tăng trần trong phiên giao dịch ngày 18 7 và 19 7. '
+            'Kết thúc phiên giao dịch ngày 19 7, mã IMP tăng trần lên 71.400 '
+            'đồng cp, sang phiên giao dịch ngày 20 7, mã này giao dịch quanh '
+            'vùng giá 71.800 đồng cp. Về cơ cấu cổ đông, hiện SK Investment '
+            'Vina III đang nắm giữ 47,67 tỉ lệ sở hữu tại Imexpharm, tương '
+            'đương gần 31,8 triệu cổ phiếu IMP. SK Investment Vina III đầu tư '
+            'vào Imexpharm từ cuối tháng 5 2020 sau khi nhận chuyển nhượng '
+            '12,3 triệu cổ phiếu IMP, tương đương 24,9 vốn điều lệ công ty từ '
+            'các quỹ thuộc nhóm Dragon Capital cùng với CAM Vietnam Mother '
+            'Fund, Kingsmead, Mirae Asset. Trong năm 2022, quỹ này cũng liên '
+            'tục rót vốn vào Imexpharm để tăng tỉ lệ sở hữu. SK Investment '
+            'Vina III Pte Ltd là quỹ thành viên của SK Group đến từ Hàn Quốc. '
+            'SK Group là một trong những tập đoàn đa ngành lớn nhất Hàn Quốc, '
+            'với các lĩnh vực hoạt động như viễn thông, công nghệ, điện tử, '
+            'năng lượng, logistics và dịch vụ. Cổ đông lớn thứ kế tiếp là Tổng '
+            'Công ty Dược Việt Nam CTCP UCCoM DVN và CTCP Đầu tư Bình Minh Kim '
+            'sở hữu lần lượt 22,03 và 8,75 vốn điều lệ Imexpharm, tương đương '
+            'nắm giữ 14,7 triệu và 6,5 triệu cổ phiếu IMP. Tính đến 30 6 2023, '
+            'tổng tài sản của Imexpharm chạm mốc 2.522,7 tỷ đồng, tăng 10 so '
+            'với thời điểm đầu năm. Trong đó, doanh nghiệp còn 45,7 tỷ đồng '
+            'tiền gửi ngân hàng không kỳ hạn, giảm 48 so với đầu năm. Ngược '
+            'lại, Imexpharm có 303 tỷ đồng tiền gửi ngân hàng có kỳ hạn ở cuối '
+            'quý II 2023, tăng 30 so với hồi đầu năm. Giá trị hàng tồn kho '
+            'tăng 50 lên 661,7 tỷ đồng chủ yếu là nguyên vật liệu với hơn 370 '
+            'tỷ đồng và gần 201,7 tỷ đồng thành phẩm. Thời điểm cuối quý II '
+            '2023, Imexpharm có 580,2 tỷ đồng nợ phải trả, tăng 52 so với đầu '
+            'năm và toàn bộ là nợ ngắn hạn. Vay nợ thuê tài chính ngắn hạn của '
+            'doanh nghiệp tăng gần gấp đôi lên 180,3 tỷ đồng, đây là khoản vay '
+            'Ngân hàng Shinhan Bank. Do thực hiện chi trả cổ tức năm 2022 số '
+            'tiền gần 66,7 tỷ đồng và phát sinh gần 18 tỷ đồng nhận ký quý, ký '
+            'cược ngắn hạn nên khoản phải trả ngắn hạn khác của Imexpharm tăng '
+            'từ 5,2 tỷ đồng hồi đầu năm lên 88,5 tỷ đồng sau 6 tháng. Vốn chủ '
+            'sở hữu của Imexpharm ghi nhận ở mức hơn 1.942,5 tỷ đồng, tăng 48 '
+            'tỷ đồng so với thời điểm đầu năm, trong đó lợi nhuận sau thuế '
+            'chưa phân phối tăng 20 lên gần 330 tỷ đồng. Trước đó ngày 10 4, '
+            'Thứ trưởng\xa0Bộ Y tế\xa0Đỗ Xuân Tuyên đã ký ban hành Quyết định '
+            'số 1749 về việc thu hồi Giấy chứng nhận đủ điều kiện kinh doanh '
+            'dược số 448 của công ty, với phạm vi kinh doanh là xuất khẩu, '
+            'nhập khẩu nguyên liệu làm thuốc. Trước sự việc này, đại diện '
+            'Imexpharm khẳng định việc Bộ Y tế có quyết định thu hồi Giấy '
+            'chứng nhận đủ điều kiện kinh doanh dược số 448 là hoàn toàn chủ '
+            'động theo đơn đề nghị của doanh nghiệp. Công ty IMP\xa0cho biết '
+            'có 2 nguyên nhân làm đơn đề nghị này. Thứ nhất,\xa0IMP\xa0có vốn '
+            'đầu tư nước ngoài trên 50 nên công ty không còn quyền phân phối, '
+            'trong đó không được mua nguyên liệu, thành phẩm của cơ sở khác để '
+            'bán. Thứ hai, từ trước đến nay,\xa0công ty\xa0cũng chưa có hoạt '
+            'động nhập khẩu thuốc, nguyên liệu về bán. Phía IMP cho biết, việc '
+            'thu hồi Giấy chứng nhận là trong lĩnh vực kinh doanh xuất khẩu, '
+            'nhập khẩu thuốc, nguyên liệu làm thuốc. Do đó, điều này hoàn toàn '
+            'không ảnh hưởng đến các hoạt động sản xuất kinh doanh của công ty '
+            'được quy định theo giấy chứng nhận đủ điều kiện kinh doanh dược '
+            'hiện tại. Theo giấy chứng nhận đủ điều kiện kinh doanh dược hiện '
+            'tại, IMP hoạt động trong lĩnh vực hoạt động sản xuất thuốc, là '
+            'thuốc không vô trùng gồm viên nang cứng mềm, thuốc uống dạng '
+            'lỏng, viên nén, và các dạng bào chế rắn khác thuốc bột, thuốc '
+            'cốm ',
+ 'summary': 'Trong quý II 2023, Imexpharm báo lãi cao kỷ lục ở mức 79,6 tỷ '
+            'đồng, hiện SK Investment Vina III đang là cổ đông lớn nhất công '
+            'ty khi nắm giữ 47,67 vốn điều lệ.',
+ 'timeCreatePostOrigin': '2023/07/20',
+ 'title': 'Imexpharm báo lãi cao kỷ lục, ai là người hưởng lợi nhất?',
+ 'url': 'https://www.nguoiduatin.vn/imexpharm-bao-lai-cao-ky-luc-ai-la-nguoi-huong-loi-nhat-a617967.html',
+ 'urlPageCrawl': 'nguoiduatin'}
+2023-08-11 15:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.nguoiduatin.vn/tiem-luc-cong-ty-duoc-sap-dau-tu-nha-may-840-ty-dong-tai-binh-dinh-a618990.html> (referer: https://www.nguoiduatin.vn/tag-ajax/34687/layout/desktop/page/1)
+2023-08-11 15:18:42 [root] DEBUG: Post added to MongoDB
+2023-08-11 15:18:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.nguoiduatin.vn/tiem-luc-cong-ty-duoc-sap-dau-tu-nha-may-840-ty-dong-tai-binh-dinh-a618990.html>
+{'author': 'Trần Thị Tú Anh',
+ 'content': 'Ngày 30 6 vừa qua, HĐQT Công ty Cổ phần Dược Trang thiết bị y tế '
+            'Bình Định Bidiphar, HoSE DBD đã công bố Nghị quyết triển kai đầu '
+            'tư Dự án Nhà máy sản xuất thuốc vô trùng thể tích nhỏ tại lô '
+            'A3.03, Khu Công nghiệp Nhơn Hội khu A, Khu Kinh tế Nhơn Hội, xã '
+            'Nhơn Hội, Tp.Quy Nhơn, tỉnh Bình Định. Huy động vốn từ 5 nhà đầu '
+            'tư Dự án có tổng mức đầu tư 840 tỷ đồng, trong đó có 700 tỷ đồng '
+            'vốn góp và 140 tỷ đồng vốn vay từ các tổ chức tín dụng. Diện tích '
+            'đất sử dụng xây dự án là 24.966 m2, quy mô xây dựng dự kiến diện '
+            'tích sàn 33.460 m2, 5 tầng với chiều cao công trình 20 m. Thời '
+            'hạn hoạt động dự án 50 năm, kể từ ngày cấp Giấy chứng nhận đăng '
+            'ký đầu tư lần đầu. Về tiến độ đầu tư, trong quý III năm nay công '
+            'ty sẽ hoàn thành các thủ tục hành chính về đầu tư và các thủ tục '
+            'liên quan, quý IV 2023 quý IV 2024 khởi công nhà xưởng và công '
+            'trình phụ trợ giai đoạn 1, quý I 2027 sẽ đi vào vận hành chính '
+            'thức và năm 2030 sẽ khởi công nhà xưởng và công trình phụ trợ '
+            'giai đoạn 2. Khi\xa0dự án\xa0đi vào hoạt động, Bidiphar dự kiến '
+            'doanh thu đạt 580 tỷ đồng, đến năm 2030 doanh thu dự kiến có thể '
+            'lên tới 1.685 tỷ đồng. Sản phẩm bán cả 2 kênh bệnh viện và nhà '
+            'thuốc, kênh bệnh viện sẽ nhiều hơn. Theo biên bản ĐHĐCĐ thường '
+            'niên 2023, đại diện Bidiphar cho biết đây là nhà máy sản xuất các '
+            'mặt hàng chủ lực của công ty. Vì vậy, Ban điều hành đã xây dựng '
+            'các phương án huy động vốn để xây dựng nhà máy, trong đó phương '
+            'án an toàn nhất là chỉ sử dụng vốn của công ty là dùng lợi nhuận '
+            'còn lại chưa phân phối hết dùng để đầu tư nhằm giảm áp lực tài '
+            'chính. Ngoài ra, tại ĐHĐCĐ thường niên 2023 Bidiphar cũng trình '
+            'kế hoạch phát hành riêng lẻ 18,7 triệu cổ phiếu cho 5 nhà đầu tư '
+            'với giá tối thiểu 50.000 đồng cổ phiếu. Thời gian phát hành dự '
+            'kiến trong năm 2023 và 2024, sau khi công ty nhận được văn bản '
+            'chấp thuận của UBCKNN.\xa0Nguồn vốn huy động sẽ được bổ sung cho '
+            'đầu tư xây dựng mới nhà máy này. Trước đó vào cuối năm 2018, '
+            'doanh nghiệp đã triển khai Dự án Nhà máy sản xuất dược phẩm '
+            'Bidiphar công nghệ cao tại lô A3.01, Khu Công nghiệp Nhơn Hội khu '
+            'A, Khu Kinh tế Nhơn Hội, xã Nhơn Hội, Tp.Quy Nhơn, tỉnh Bình '
+            'Định. Nhà máy có tổng vốn đầu tư trên 280 tỷ đồng với quy mô '
+            '30.000 m2. Theo kế hoạch ban đầu, thời gian hoàn thành thẩm định '
+            'nhà máy và đưa vào vận hành sản xuất là tháng 3 2020 đối với dây '
+            'chuyền thuốc tiêm và tháng 6 2020 đối với dây chuyền thuốc viên. '
+            'Tuy nhiên, do ảnh hưởng của dịch Covid 19, nên thời gian hoàn '
+            'thành Nhà máy đến cuối quý IV 2020 và tiến hành đánh giá theo '
+            'tiêu chuẩn GMP PIC s, GMP EU vào năm 2021. Quy mô sản xuất nhóm '
+            'sản phẩm thuốc điều trị ung thư dạng tiêm là 6 triệu sản phẩm '
+            'năm, tương đương 10 tấn năm nhóm sản phẩm thuốc điều trị ung thư '
+            'và hormone dạng viên là 60 triệu sản phẩm năm, tương đương 100 '
+            'tấn năm. Về bức tranh tài chính, Bidiphar có doanh thu 10 năm '
+            'liên tiếp đều trên nghìn tỷ đồng kể từ 2012 và lợi nhuận hơn trăm '
+            'tỷ trong 8 năm liên tiếp. Trong năm 2022 vừa qua, công ty ghi '
+            'nhận lãi sau thuế kỷ lục ở mức 243,5 tỷ đồng, tăng 29 so với năm '
+            '2021 và vượt 13 kế hoạch đề ra. Sang nửa đầu năm 2023, công ty '
+            'ghi nhận doanh thu thuần tăng 14 lên 819,5 tỷ đồng lợi nhuận '
+            'trước thuế và sau thuế lần lượt đạt 172,8 tỷ đồng và 140,2 tỷ '
+            'đồng, tăng 28 so với cùng kỳ. Năm 2023, Bidiphar lên kế hoạch đem '
+            'về 1.800 tỷ đồng doanh thu và 300 tỷ đồng lợi nhuận trước thuế, '
+            'tăng lần lượt 13 và 19 so với thực hiện năm 2022. Với kết quả đạt '
+            'được trong nửa đồng năm, công ty đã thực hiện được lần lượt 46 và '
+            '58 kế hoạch doanh thu và lợi nhuận năm. Riêng trong quý II 2023 '
+            'công ty ghi nhận doanh thu thuần hơn 414 tỷ đồng, tăng 23 so với '
+            'cùng kỳ, chủ yếu là doanh thu bán dược phẩm sản xuất gần 409,6 tỷ '
+            'đồng. Cấn trừ các chi phí, Bidiphar báo lợi nhuận sau thuế gần 72 '
+            'tỷ đồng, tăng 61 so với kết quả cùng kỳ, đây cũng là mức lãi quý '
+            'cao thứ 2 kể từ khi công ty niêm yết trên sàn năm 2018. Phía công '
+            'ty cho biết, tăng trưởng doanh thu và lợi nhuận đến từ việc thay '
+            'đổi cơ cấu kinh doanh, đẩy mạnh các mặt hàng dược phẩm tự sản '
+            'xuất. Tính đến ngày 30 6 2023, tổng tài sản của Bidiphar giảm nhẹ '
+            'xuống 1.868,6 tỷ đồng, như vậy ở thời điểm hiện tại, Dự án Nhà '
+            'máy sản xuất thuốc vô trùng thể tích nhỏ chiếm 45 tổng tài sản '
+            'của doanh nghiệp. Trong kỳ, tiền và các khoản tương đương tiền, '
+            'tiền gửi có kỳ hạn của Bidiphar ở mức 147,5 tỷ đồng, giảm 47 so '
+            'hồi đầu năm. Hàng tồn kho tăng 17 so với đầu năm lên 536,7 tỷ '
+            'đồng, chủ yếu là 31 tỷ đồng nguyên vật liệu và 186,7 tỷ đồng '
+            'thành phẩm. Chi phí xây dựng dở dang của công ty tăng 55 lên '
+            '150,8 tỷ đồng, trong đó chi phí tại nhà máy sản xuất dược công '
+            'nghệ cao tăng 32 lên hơn 83 tỷ đồng, chi phí dây chuyền thuốc '
+            'tiêm bột 26,8 tỷ đồng, trong khi cùng kỳ không phát sinh và gần '
+            '25 tỷ đồng tại văn phòng làm việc chi nhán Hồ Chí Minh. Đến cuối '
+            'quý II, tổng nợ phải trả của Bidiphar ở mức 527,3 tỷ đồng, giảm '
+            '13 tỷ đồng so với đầu năm, trong đó chủ yếu là nợ ngắn hạn với '
+            '402,5 tỷ đồng và 124,6 tỷ đồng nợ dài hạn. Khoản vay nợ tài chính '
+            'ngắn hạn tăng gấp 3,6 lần so với đầu năm lên hơn 57 tỷ đồng, '
+            'trong đó công ty vay Ngân hàng TMCP Đầu tư và Phát triển Việt Nam '
+            'BIDV hơn 41 tỷ đồng, 16 tỷ đồng còn lại là vay dài hạn đến hạn '
+            'trả. Ngược lại, khoản vay nợ tài chính dài hạn giảm 13 so với đầu '
+            'năm xuống còn 52 tỷ đồng, toàn bộ là khoản vay từ quỹ đầu tư phát '
+            'triển Bình Định. Vốn chủ sở hữu của Bidiphar giảm nhẹ so với đầu '
+            'năm xuống còn 1.335 tỷ đồng, trong đó có 748,8 tỷ đồng vốn góp. '
+            'Đến cuối quý II, quỹ đầu tư phát triển tỉnh Bình Định nắm giữ '
+            '13,34 vốn điều lệ của công ty, tương đương sở hữu gần 10 triệu cổ '
+            'phần, các cổ đông khác sở hữu 86,59 vốn, tương đương 64,8 triệu '
+            'cổ phần và 0,07 cổ phần còn lại là cổ phiếu quỹ. Ngày 7 7 vừa '
+            'qua, Cục Quản lý Dược Bộ Y tế đã ra Quyết định số 483 xử phạt vi '
+            'phạm hành chính đối với Bidiphar do\xa0thực hiện hành vi vi phạm '
+            'hành chính khi\xa0sản xuất thuốc vi phạm chất lượng mức độ 1 theo '
+            'quy định của pháp luật đối với thuốc Methotrexat Bidiphar 50mg '
+            '2ml, số giấy đăng ký lưu hành QLĐB 638 17, số lô 21003, ngày sản '
+            'xuất 30 8 2021, hạn sử dụng 30 8 2023. Hình thức xử phạt hành '
+            'chính đối với Bidiphar là phạt tiền với mức 100 triệu đồng. Ngoài '
+            'ra, đơn vị này còn chịu hình thức xử phạt bổ sung là đình chỉ '
+            'hoạt động dây chuyền sản xuất liên quan đến hành vi vi phạm trong '
+            'thời hạn 2 tháng kể từ ngày ban hành ban hành quyết định này. '
+            'Biện pháp khắc phục hậu quả là buộc tiêu hủy toàn bộ số thuốc vi '
+            'phạm chất lượng. Trước vụ việc trên, bà Phạm Thị Thanh Hương Tổng '
+            'Giám đốc Bidiphar cho biết, việc này xảy ra từ 2021, công ty đã '
+            'ngay lập tức thực hiện việc thu hồi và kiểm tra chất lượng tất cả '
+            'các lô khác trên thị trường. Công ty cũng đã dừng sản xuất toàn '
+            'dây chuyền để đánh giá các yếu tố nguy cơ và thực hiện tất cả các '
+            'hành động phòng ngừa cần thiết. Toàn bộ hoạt động trên đều được '
+            'công ty báo cáo đầy đủ tới cơ quan chức năng. Bà Hương thông tin '
+            'thêm, cho tới nay, lô thuốc này đã được hủy toàn bộ',
+ 'summary': 'Sắp tới, Bidiphar sẽ triển khai đầu tư Dự án Nhà máy sản xuất '
+            'thuốc vô trùng thể tích nhỏ tại Tp.Quy Nhơn, tỉnh Bình Định có '
+            'diện tích đất sử dụng là 24.966 m2.',
+ 'timeCreatePostOrigin': '2023/07/27',
+ 'title': 'Tiềm lực công ty dược sắp đầu tư nhà máy 840 tỷ đồng tại Bình Định',
+ 'url': 'https://www.nguoiduatin.vn/tiem-luc-cong-ty-duoc-sap-dau-tu-nha-may-840-ty-dong-tai-binh-dinh-a618990.html',
+ 'urlPageCrawl': 'nguoiduatin'}
