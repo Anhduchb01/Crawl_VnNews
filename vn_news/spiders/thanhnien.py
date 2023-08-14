@@ -57,16 +57,24 @@ class ThanhNienSpider(scrapy.Spider):
 		
 		summary = response.css('h2.detail-sapo::text').get()
 		summary = self.formatString(summary)
+		summary_html  = response.css('h2.detail-sapo').get()
+
 		content = response.css('div.detail-cmain p ::text').getall()
 		content = self.formatString(content)
+		content_html = response.css('div.detail-cmain').get()
 		item = DuocItem(
 			title=title,
 			timeCreatePostOrigin=timeCreatePostOrigin,
 			author = author,
 			summary=summary,
 			content=content,
+			summary_html = summary_html,
+			content_html = content_html,
 			urlPageCrawl= 'thanhnien',
 			url=response.url
 		)
-		yield item
+		if title == '' or title ==None or content =='' or content == None :
+			yield None
+		else :
+			yield item
 

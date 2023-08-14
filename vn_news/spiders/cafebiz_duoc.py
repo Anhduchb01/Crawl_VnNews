@@ -45,7 +45,7 @@ class CafebizDuocSpider(scrapy.Spider):
 		timeCreatePostOrigin = re.sub(r'\s{2,}', ' ', str(timeCreatePostOrigin))
 		try :
 			timeCreatePostOrigin  = timeCreatePostOrigin.strip()
-			datetime_object = datetime.strptime(timeCreatePostOrigin, '%d/%m/%Y %H:%M %p ')
+			datetime_object = datetime.strptime(timeCreatePostOrigin, '%d/%m/%Y %H:%M %p')
 			timeCreatePostOrigin = datetime_object.strftime('%Y/%m/%d')
 		except Exception as e: 
 				print('Do Not convert to datetime')
@@ -53,19 +53,27 @@ class CafebizDuocSpider(scrapy.Spider):
 		author = response.css('p.p-author strong::text').get()
 		author = author.replace('Theo','')
 		author = re.sub(r'\s{2,}', ' ', str(author))
-
 		summary = response.css('h2.sapo::text').get()
 		summary = self.formatString(summary)
+		summary_html = response.css('h2.sapo').get()
 		content = response.css('div.detail-content p ::text').getall()
 		content = self.formatString(content)
+		content_html = response.css('div.detail-content').get()
+		
 		item = DuocItem(
 			title=title,
 			timeCreatePostOrigin=timeCreatePostOrigin,
 			author = author,
 			summary=summary,
 			content=content,
+			summary_html=summary_html,
+			content_html = content_html,
 			urlPageCrawl= 'cafebiz',
 			url=response.url
 		)
-		yield item
+		if title == '' or title ==None or content =='' or content == None :
+			yield None
+		else :
+			yield item
+
 

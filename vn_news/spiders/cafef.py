@@ -62,6 +62,5 @@ class CafefSpider(scrapy.Spider):
             urlPageCrawl= 'cafef',
             url=response.url
         )
-        
-        # Return the item
+
         yield item

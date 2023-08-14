@@ -52,9 +52,11 @@ class NguoiDuaTinSpider(scrapy.Spider):
 
 		summary = response.css('div.tmp-title-large::text').get()
 		summary = self.formatString(summary)
+		summary_html =  response.css('div.tmp-title-large').get()
 
 		content = response.css('article.article-content p::text').getall()
 		content = self.formatString(content)
+		content_html = response.css('article.article-content').get()
 
 		item = DuocItem(
 			title=title,
@@ -62,7 +64,12 @@ class NguoiDuaTinSpider(scrapy.Spider):
 			author = author,
 			summary=summary,
 			content=content,
+			summary_html = summary_html,
+			content_html = content_html,
 			urlPageCrawl= 'nguoiduatin',
 			url=response.url
 		)
-		yield item
+		if title == '' or title ==None or content =='' or content == None :
+			yield None
+		else :
+			yield item

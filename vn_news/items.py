@@ -17,6 +17,8 @@ class DuocItem(scrapy.Item):
     timeCreatePostOrigin = scrapy.Field()
     summary = scrapy.Field()
     content = scrapy.Field()
+    summary_html = scrapy.Field()
+    content_html = scrapy.Field()
     urlPageCrawl = scrapy.Field()
     url = scrapy.Field()
 class VnNewsItem(scrapy.Item):

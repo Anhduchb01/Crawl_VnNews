@@ -64,11 +64,13 @@ class VnexpressSpider(scrapy.Spider):
 		
 		summary = response.css('div.sidebar-1 > p.description::text').get()
 		summary = self.formatString(summary)
+		summary_html = response.css('div.sidebar-1').get()
 
 		content = response.css('article.fck_detail p::text').getall()
 		content = ''.join(content).strip()
 		content = self.formatString(content)
-		
+		content_html = response.css('article.fck_detail').get()
+	
 		
 		# Create a CafefItem instance containing the information
 		item = DuocItem(
@@ -77,9 +79,12 @@ class VnexpressSpider(scrapy.Spider):
 			author = author,
 			summary=summary,
 			content=content,
+			summary_html= summary_html,
+			content_html= content_html,
 			urlPageCrawl= 'vnexpress',
 			url=response.url
 		)
-		
-		# Return the item
-		yield item
+		if title == '' or title ==None or content =='' or content == None :
+			yield None
+		else :
+			yield item

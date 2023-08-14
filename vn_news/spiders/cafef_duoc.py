@@ -51,16 +51,23 @@ class CafefDuocSpider(scrapy.Spider):
 		
 		summary = response.css('h2.sapo::text').get()
 		summary = self.formatString(summary)
+		summary_html = response.css('h2.sapo').get()
 
 		content = response.css('div.detail-content.afcbc-body p ::text').getall()
 		content = self.formatString(content)
+		content_html = response.css('div.detail-content.afcbc-body').get()
 		item = DuocItem(
 			title=title,
 			timeCreatePostOrigin=timeCreatePostOrigin,
 			author = author,
 			summary=summary,
 			content=content,
+			summary_html= summary_html,
+			content_html = content_html,
 			urlPageCrawl= 'cafef',
 			url=response.url
 		)
-		yield item
+		if title == '' or title ==None or content =='' or content == None :
+			yield None
+		else :
+			yield item

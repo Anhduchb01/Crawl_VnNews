@@ -58,16 +58,20 @@ class VnpcaSpider(scrapy.Spider):
 			print('Do Not convert to datetime')
 			print(e)
 		summary = response.css('div.div-noi-dung.div-mo-ta-tin > p::text').get()
+		summary = self.formatString(summary)
+		summary_html = response.css('div.div-noi-dung.div-mo-ta-tin').get()
 
 		content = response.css('div.noi-dung-tin > p::text').getall()
 		content = ''.join(content).strip()
 		content = self.formatString(content)
-		# Create a CafefItem instance containing the information
+		content_html = response.css('div.noi-dung-tin').get()
 		item = NewsItem(
 			title=title,
 			timeCreatePostOrigin=timeCreatePostOrigin,
 			summary=summary,
 			content=content,
+			summary_html = summary_html,
+			content_html = content_html,
 			urlPageCrawl= 'vnpca',
 			url=response.url
 		)
